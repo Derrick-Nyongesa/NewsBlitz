@@ -2,17 +2,17 @@
 {% macro display_sources(sources_list) %}
 
 <div class="container-fluid">
-    <div class="card-columns">
+    <div class="card-columns ">
         {% for source in sources_list %}
-        <div class="card sourcecard">
+        <div class="card  news-source">
             <div class="card-header" id="sourcename" >
-                <h4><a href="/articles/{{source.id}}">{{source.name}}</a></h4>
+                <h4 class="source-name"><a href="/articles/{{source.id}}">{{source.name}}</a></h4>
             </div>
             <div class="card-body">
                 <p class="desc">
                     {{source.description}}
                 </p>
-                <a href="/articles/{{source.id}}"><button class="btn btn-sm btn-outline-success">Read Articles</button> </a>
+                <a href="/articles/{{source.id}}"><button class="btn btn-sm btn-outline-success" id="read">Read Articles</button> </a>
                 <a href="{{source.url}}"><button class="btn btn-sm btn-outline-info" id="visit">Visit {{source.name}}</button></a>
             </div>
         </div>
