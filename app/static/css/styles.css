@@ -48,7 +48,7 @@ body {
 
 #visit:hover{
     background-color: #92bde7;
-    color: white;
+    color: #006ba6;
     outline: 0;
     transition: background-color 2s ease-out;
     font-weight: bold;
