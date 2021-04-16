@@ -11,6 +11,8 @@ base_url = app.config['NEWS_API_BASE_URL']
 
 articles_base_url = app.config['ARTICLES_API_BASE_URL']
 
+search_url = app.config['SEARCH_API_BASE_URL']
+
 def get_sources(category):
     """
     function that gets response from the api call
@@ -82,3 +84,17 @@ def process_articles(article_list):
     return articles_results
 
 
+
+def search_article(article_name):
+    search_article_url = search_url.format(article_name,api_key)
+
+    with urllib.request.urlopen(search_article_url) as url:
+        search_data = url.read()
+        search_response = json.loads(search_data)
+
+        search_results = None
+
+        if search_response['articles']:
+            search_list = search_response['articles']
+            search_results = process_articles(search_list)
+    return search_results 
