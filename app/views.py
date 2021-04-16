@@ -11,4 +11,5 @@ def index():
     business_news = get_sources("business")
     entertainment_news = get_sources("entertainment")
     sports_news = get_sources("sports")
-    return render_template('index.html',general=general_news,business=business_news,entertainment=entertainment_news,sports=sports_news )
+    title = 'Home - Welcome to NewsBlitz'
+    return render_template('index.html',title=title,general=general_news,business=business_news,entertainment=entertainment_news,sports=sports_news )
