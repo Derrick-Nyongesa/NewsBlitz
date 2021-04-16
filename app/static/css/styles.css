@@ -1,4 +1,8 @@
-/*.card-img{
+img{
     width: 100%;
     border-radius: 8px;
-}*/
+}
+
+.main-heading{
+    text-align: center;
+}

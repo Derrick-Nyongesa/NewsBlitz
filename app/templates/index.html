@@ -2,8 +2,14 @@
 
 {% import 'macros.html' as macro%}
 
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+{% endblock %}
+
 {% block content %}
-    <h2>News Sources</h2>
+    <h2 class="main-heading">News Sources</h2>
     <ul>
         <h3>General News</h3>
         {{ macro.display_sources(general)}}
