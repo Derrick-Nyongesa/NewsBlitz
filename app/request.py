@@ -80,3 +80,5 @@ def process_articles(article_list):
         article_object = Articles(source,author,title,description,url,urlToImage,publishedAt)
         articles_results.append(article_object)
     return articles_results
+
+
