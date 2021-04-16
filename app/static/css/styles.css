@@ -54,12 +54,12 @@ body {
     font-weight: bold;
 }
 
-#read{
+.read{
     color: #006ba6;
     font-weight: bold;
 }
 
-#read:hover{
+.read:hover{
     background-color: #006ba6;
     color: white;
     outline: 0;
@@ -69,4 +69,29 @@ body {
 
 .btn{
     padding-left: 10px;
+}
+
+#search{
+   margin-top: 10px;
+    background-color: #dc2f02;
+    font-weight: bold;
+}
+
+#search:hover{
+    background-color: #92bde7;
+    color: #006ba6;
+    outline: 0;
+    transition: background-color 2s ease-out;
+    font-weight: bold;
+}
+
+.title{
+    color: #0c0f0a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.highlight{
+    font-style: italic;
+    font-weight: bold;
 }
