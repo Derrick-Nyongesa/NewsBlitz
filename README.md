@@ -39,6 +39,10 @@ git clone https://github.com/Derrick-Nyongesa/NewsBlitz.git
 * [Heroku](https://heroku.com)
 
 
+## Link to live site on GitHub Pages
+[Derrick Nyongesa https://newsblitz.herokuapp.com/](https://newsblitz.herokuapp.com/)
+
+
 ## Contact Information 
 Any query? Contact me at [nyongesaderrick@gmail.com]
 
